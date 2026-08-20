@@ -154,16 +154,16 @@ body {
     }
 
     #buttons {
-        row-gap: 1vw;
+        row-gap: 3vw;
         column-gap: 3vh;
         margin: 0;
     }
 
     #buttons button {
         width: 14vw;
-        padding: 2px;
+        padding: 1px;
         height: 60px;
-        border-radius: 30px;        
+        border-radius: 16px;        
     }
     .displaycalc{
           width: 80vw;
