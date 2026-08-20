@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #9afff1;
+}
+
+.parent {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc {
+
+    height: 80vh;
+    width: clamp(40vw, 40vw, 80vw);
+
+    background-color: hsl(214, 100%, 65%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 20px 17px 0px 9px rgba(0, 0, 0, 0.3);
+}
+
+.upper {
+    height: 5rem;
+    margin-bottom: 2vh;
+    width: 31rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.displaycalc {
+    height: 11vh;
+    width: 34vw;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: xx-large;
+    display: flex;
+    justify-items: flex-end;
+    align-items: center;
+
+}
+
+.displaycalc:hover {
+    border-radius: 10px;
+}
+
+#buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 0.4vw;
+
+}
+
+.fontbig {
+    font-size: x-large;
+}
+
+.fontbigx {
+    font-size: xx-large;
+}
+
+#buttons button {
+    height: 10vh;
+    width: 8vw;
+    background-color: rgb(248, 56, 255);
+    color: #fbff11;
+    font-size: x-large;
+}
+
+#buttons button:hover {
+    border-radius: 10px;
+}
+
+.ope {
+    color: hsl(108, 100%, 60%) !important;
+    font-size: large-x !important;
+    font-weight: 700;
+}
+
+.op {
+    font-size: xx-large !important;
+}
+.red{
+    background-color: red !important;
+}
+
+@media (max-width: 1000px) {
+    .calc {
+        width: 70vw;
+    }
+
+    #buttons {
+        row-gap: 1vw;
+        column-gap: 5vh;
+    }
+
+    #buttons button {
+        width: 12vw;
+    }
+    .displaycalc{
+          width: 80vw;
+    }
+}
+
+@media (max-width: 685px) {
+    .calc {
+        width: 70vw;
+    }
+
+    #buttons {
+        row-gap: 1vw;
+        column-gap: 3vh;
+    }
+
+    #buttons button {
+        width: 12vw;
+    }
+    .displaycalc{
+          width: 60vw;
+    }
+
+}
