@@ -1,11 +1,4 @@
 
-
-
-// let btn5 = document.querySelector(".one_clear")
-// btn5.addEventListener("click", () => {
-//    display.value =display.value.slice(0, -1)
-// })
-
 let output = document.querySelector(".displaycalc")
 output.value = ""
 
