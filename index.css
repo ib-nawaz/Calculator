@@ -5,6 +5,10 @@
 
 body {
     background-color: #9afff1;
+    height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .parent {
@@ -13,6 +17,8 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-sizing: border-box;
+   
 }
 
 .calc {
@@ -62,8 +68,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin: auto;
-    gap: 0.4vw;
+   
+    gap: 0.5vw;
+    margin-bottom: 5vh;
 
 }
 
@@ -78,9 +85,12 @@ body {
 #buttons button {
     height: 10vh;
     width: 8vw;
-    background-color: rgb(248, 56, 255);
-    color: #fbff11;
+    background:linear-gradient(131deg,#89fff9,#cfffe5,#c5acff);
+    color: #ff04de;
     font-size: x-large;
+    outline: none;
+    border: none;
+    
 }
 
 #buttons button:hover {
@@ -88,7 +98,7 @@ body {
 }
 
 .ope {
-    color: hsl(108, 100%, 60%) !important;
+    color: hsl(251, 100%, 62%) !important;
     font-size: large-x !important;
     font-weight: 700;
 }
@@ -130,9 +140,35 @@ body {
 
     #buttons button {
         width: 12vw;
+
     }
     .displaycalc{
           width: 60vw;
+    }
+
+}
+@media (max-width: 500px) {
+    .calc {
+        width: 82vw;
+    }
+
+    #buttons {
+        row-gap: 1vw;
+        column-gap: 3vh;
+        margin: 0;
+    }
+
+    #buttons button {
+        width: 14vw;
+        padding: 2px;
+        height: 60px;
+        border-radius: 30px;        
+    }
+    .displaycalc{
+          width: 80vw;
+    }
+    .calc{
+         box-shadow: 12px 3px 2px 9px rgba(0, 0, 0, 0.3);
     }
 
 }
